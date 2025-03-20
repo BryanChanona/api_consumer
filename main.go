@@ -7,7 +7,8 @@ import (
 
 func main() {
 	 helpers.ConnMySQL()
+	 
 	 r:= gin.Default()
-
+	 helpers.InitCORS(r)
 	 r.Run(":8081")
 }
