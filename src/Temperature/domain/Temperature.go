@@ -2,6 +2,9 @@ package domain
 
 type Temperature struct {
 	Id int `json:"id,omitempty"`
-	Id_ int  `json:"id_user"`
+	Id_user  int  `json:"id_user"`
+	Date string `json:"date"`
+	Time string `json:"time"`
+	RegisteredMeasure float64 `json:"registeredMeasure"`
 
 }
